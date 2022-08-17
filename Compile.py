@@ -59,9 +59,9 @@ df = df.loc[:, df.columns[0:2].tolist()+['POS']+df.columns[2:].tolist()]
 df = df.loc[:,~df.columns.duplicated()]
 
 #changing data types
-df['RushingYds'] = pd.to_numeric(df['RushingYds'], downcast="float",errors='coerce')
-df['ReceivingYds'] = pd.to_numeric(df['ReceivingYds'], downcast="float",errors='coerce')
-df['PassingYds'] = pd.to_numeric(df['PassingYds'], downcast="float",errors='coerce')
+df['RushingYds'] = df['RushingYds'].str.replace(',','').astype(float)
+df['ReceivingYds'] = df['ReceivingYds'].str.replace(',','').astype(float)
+df['PassingYds'] = df['PassingYds'].str.replace(',','').astype(float)
 df['POS'] = df['POS'].str[:2]
 
 df.to_csv('data/all_compiled.csv')

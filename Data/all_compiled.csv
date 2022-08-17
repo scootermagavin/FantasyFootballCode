@@ -1,4 +1,4 @@
-,Player,Team,POS,RushingAtt,RushingYds,RushingTD,REC,ReceivingYds,ReceivingTD,FL,FPTS,PassingAtt,CMP,PassingYds,PassingTD,INTS
+,Player,Team,POS,RushingAtt,RushingYds,RushingTD,Receptions,ReceivingYds,ReceivingTD,FL,FPTS,PassingAtt,CMP,PassingYds,PassingTD,INTS
 1,Jonathan Taylor,IND,RB,327.5,"1,608.9",14.8,42.3,352.9,2.0,2.3,292.4,0.0,0.0,0,0.0,0.0
 2,Derrick Henry,TEN,RB,366.2,"1,649.5",13.1,27.3,214.3,0.9,2.0,266.2,0.0,0.0,0,0.0,0.0
 3,Austin Ekeler,LAC,RB,219.1,976.6,9.4,74.5,664.8,5.3,1.5,249.5,0.0,0.0,0,0.0,0.0

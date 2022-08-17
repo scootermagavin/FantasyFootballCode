@@ -23,6 +23,7 @@ for position in positions:
             'TDS': 'RushingTD',
             'YDS.1': 'ReceivingYds',
             'TDS.1': 'ReceivingTD', 
+            'REC': 'Receptions'
         }, axis=1)
     elif position == 'qb':
         df = df.rename({
@@ -39,12 +40,14 @@ for position in positions:
             'YDS': 'ReceivingYds',
             'TDS': 'ReceivingTD',
             'YDS.1': 'RushingYds',
-            'TDS.1': 'RushingTD'
+            'TDS.1': 'RushingTD',
+            'REC': 'Receptions'
         }, axis=1)
     elif position == 'te':
         df = df.rename({
             'YDS': 'ReceivingYds',
             'TDS': 'ReceivingTD',
+            'REC': 'Receptions'
         }, axis=1)
     #df = df.drop('FPTS', axis=1)
     dfs.append(df)

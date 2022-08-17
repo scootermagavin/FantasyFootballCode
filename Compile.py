@@ -25,6 +25,7 @@ for position in positions:
             'TDS.1': 'ReceivingTD', 
             'REC': 'Receptions'
         }, axis=1)
+        df['RushingYds'] = df['RushingYds'].str.replace(',','').astype(float)
     elif position == 'qb':
         df = df.rename({
             'ATT': 'PassingAtt',
@@ -34,6 +35,7 @@ for position in positions:
             'YDS.1': 'RushingYds',
             'TDS.1': 'RushingTD'
         }, axis=1)
+        df['PassingYds'] = df['PassingYds'].str.replace(',','').astype(float)
     elif position == 'wr':
         df = df.rename({
             'ATT': 'RushingAtt',
@@ -43,12 +45,14 @@ for position in positions:
             'TDS.1': 'RushingTD',
             'REC': 'Receptions'
         }, axis=1)
+        df['ReceivingYds'] = df['ReceivingYds'].str.replace(',','').astype(float)
     elif position == 'te':
         df = df.rename({
             'YDS': 'ReceivingYds',
             'TDS': 'ReceivingTD',
             'REC': 'Receptions'
         }, axis=1)
+        df['ReceivingYds'] = df['ReceivingYds'].str.replace(',','').astype(float)
     #df = df.drop('FPTS', axis=1)
     dfs.append(df)
 
@@ -59,9 +63,11 @@ df = df.loc[:, df.columns[0:2].tolist()+['POS']+df.columns[2:].tolist()]
 df = df.loc[:,~df.columns.duplicated()]
 
 #changing data types
-df['RushingYds'] = df['RushingYds'].str.replace(',','').astype(float)
-df['ReceivingYds'] = df['ReceivingYds'].str.replace(',','').astype(float)
-df['PassingYds'] = df['PassingYds'].str.replace(',','').astype(float)
+
+
+
+
+
 df['POS'] = df['POS'].str[:2]
 
 df.to_csv('data/all_compiled.csv')

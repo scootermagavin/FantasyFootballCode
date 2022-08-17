@@ -18,35 +18,35 @@ for position in positions:
     df['POS'] = position.upper()
     if position == 'rb':
         df = df.rename({
-            'ATT': 'RUSH_ATT',
-            'YDS': 'RUSH_YD',
-            'TDS': 'RUSH_TD',
-            'YDS.1': 'REC_YD',
-            'TDS.1': 'REC_TD', 
+            'ATT': 'RushingAtt',
+            'YDS': 'RushingYds',
+            'TDS': 'RushingTD',
+            'YDS.1': 'ReceivingYds',
+            'TDS.1': 'ReceivingTD', 
         }, axis=1)
     elif position == 'qb':
         df = df.rename({
-            'ATT': 'PASS_ATT',
-            'YDS': 'PASS_YD',
-            'TDS': 'PASS_TD',
-            'ATT.1': 'RUSH_ATT',
-            'YDS.1': 'RUSH_YD',
-            'TDS.1': 'RUSH_TD'
+            'ATT': 'PassingAtt',
+            'YDS': 'PassingYds',
+            'TDS': 'PassingTD',
+            'ATT.1': 'RushingAtt',
+            'YDS.1': 'RushingYds',
+            'TDS.1': 'RushingTD'
         }, axis=1)
     elif position == 'wr':
         df = df.rename({
-            'ATT': 'RUSH_ATT',
-            'YDS': 'REC_YD',
-            'TDS': 'REC_TD',
-            'YDS.1': 'RUSH_YD',
-            'TDS.1': 'RUSH_TD'
+            'ATT': 'RushingAtt',
+            'YDS': 'ReceivingYds',
+            'TDS': 'ReceivingTD',
+            'YDS.1': 'RushingYds',
+            'TDS.1': 'RushingTD'
         }, axis=1)
     elif position == 'te':
         df = df.rename({
-            'YDS': 'REC_YD',
-            'TDS': 'REC_TD',
+            'YDS': 'ReceivingYds',
+            'TDS': 'ReceivingTD',
         }, axis=1)
-    df = df.drop('FPTS', axis=1)
+    #df = df.drop('FPTS', axis=1)
     dfs.append(df)
 
 df = pd.concat(dfs)

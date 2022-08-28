@@ -64,10 +64,6 @@ df = df.loc[:,~df.columns.duplicated()]
 
 #changing data types
 
-
-
-
-
 df['POS'] = df['POS'].str[:2]
 
 df.to_csv('data/all_compiled.csv')

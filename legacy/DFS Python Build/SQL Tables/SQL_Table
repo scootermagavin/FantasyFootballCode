@@ -1,0 +1,169 @@
+import sqlite3
+import pandas as pd
+import os
+
+# ---------------------- SQLite Database Setup ----------------------
+
+# Filepaths
+db_filepath = "/Users/scotthoran/Library/CloudStorage/OneDrive-Personal/Documents/Daily Fantasy - Active/DFS Python Build/SQL Tables/fantasy_football.db"
+csv_base_path = "/Users/scotthoran/Library/CloudStorage/OneDrive-Personal/Documents/Daily Fantasy - Active/DFS Python Build/Data/"
+
+# Create a connection to the SQLite database
+conn = sqlite3.connect(db_filepath)
+cursor = conn.cursor()
+
+# Define function to delete data from specified tables
+def delete_data_from_table(table_name, connection):
+    try:
+        connection.execute(f"DELETE FROM {table_name}")
+        print(f"All data from {table_name} has been deleted.")
+    except sqlite3.OperationalError as e:
+        print(f"Error deleting data from {table_name}: {e}")
+
+# Clear existing data from the tables
+delete_data_from_table("team_data", conn)
+delete_data_from_table("player_level_detail", conn)
+
+# Define function to create tables
+def create_or_append_table_from_csv(file_path, table_name, connection):
+    try:
+        if os.path.exists(file_path):  # Check if file exists
+            df = pd.read_csv(file_path)
+            df.to_sql(table_name, connection, if_exists='append', index=False)
+            print(f"Data from {file_path} inserted into {table_name}.")
+        else:
+            print(f"{file_path} not found!")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+
+# Import Team Data
+create_or_append_table_from_csv(csv_base_path + "team_data.csv", "team_data", conn)
+
+# Import Player Data
+for year in range(2000, 2023):
+    file_path = csv_base_path + f"player_data_{year}.csv"
+    create_or_append_table_from_csv(file_path, "player_level_detail", conn)
+
+# ---------------------- SQLite Database Aggregation ----------------------
+
+# Load the team data from the SQLite database
+team_data = pd.read_sql("SELECT * FROM team_data", conn)
+
+# Aggregating defensive stats by team, season, and week
+defensive_cols = ['team_name', 'season', 'week'] + [col for col in team_data.columns if 'defense' in col]
+defensive_data = team_data[defensive_cols].groupby(['team_name', 'season', 'week']).sum().reset_index()
+
+# Calculate rankings for each defensive stat
+for col in defensive_data.columns:
+    if 'defense' in col:
+        defensive_data[f"{col}_rank"] = defensive_data.groupby(['season', 'week'])[col].rank()
+
+# Save the aggregated defensive stats to the SQLite database
+defensive_data.to_sql("aggregated_defensive_stats", conn, if_exists='replace', index=False)
+
+# ---------------------- Vegas Data Integration and Player Metrics Aggregation ----------------------
+
+vegas_spread_df = pd.read_csv(csv_base_path + 'Vegas Odds Sheet - Spread.csv')
+vegas_totals_df = pd.read_csv(csv_base_path + 'Vegas Odds Sheet - total.csv')
+
+# Processing Vegas spreads and totals data
+vegas_spread_df[['teamname1', 'teamname2']] = vegas_spread_df['event_name'].str.split('_', expand=True)
+vegas_spread_df['favorite'] = vegas_spread_df.apply(lambda row: row['teamname1'] if row['point_1'] < 0 else row['teamname2'], axis=1)
+vegas_spread_df['underdog'] = vegas_spread_df.apply(lambda row: row['teamname2'] if row['point_1'] < 0 else row['teamname1'], axis=1)
+vegas_totals_df['over_under_line'] = vegas_totals_df['point_1'].str.extract('over (\d+\.\d+|\d+)').astype(float)
+vegas_totals_df[['teamname1', 'teamname2']] = vegas_totals_df['event_name'].str.split('_', expand=True)
+
+# Merge the processed spread and totals data
+vegas_combined_df = pd.merge(vegas_spread_df[['teamname1', 'teamname2', 'favorite', 'underdog', 'point_1', 'point_2', 'bookmaker']], 
+                             vegas_totals_df[['teamname1', 'teamname2', 'over_under_line', 'bookmaker']], 
+                             on=['teamname1', 'teamname2', 'bookmaker'], 
+                             how='inner')
+
+# Player metrics by season
+player_data_df = pd.read_sql("SELECT * FROM player_level_detail;", conn)
+adjusted_metrics = ['passing_yds', 'passing_att', 'passing_cmp', 'rushing_att', 'rushing_yds', 'receiving_tar', 'receiving_rec', 'receiving_yds']
+player_by_season = player_data_df.groupby(['name', 'season'])[adjusted_metrics].sum().reset_index()
+player_by_season['yds_per_cmp'] = player_by_season['passing_yds'] / player_by_season['passing_cmp']
+player_by_season['rush_yds_per_att'] = player_by_season['rushing_yds'] / player_by_season['rushing_att']
+player_by_season['rec_yds_per_rec'] = player_by_season['receiving_yds'] / player_by_season['receiving_rec']
+
+# Player metrics by career
+player_by_career = player_data_df.groupby(['name'])[adjusted_metrics].sum().reset_index()
+player_by_career['yds_per_cmp'] = player_by_career['passing_yds'] / player_by_career['passing_cmp']
+player_by_career['rush_yds_per_att'] = player_by_career['rushing_yds'] / player_by_career['rushing_att']
+player_by_career['rec_yds_per_rec'] = player_by_career['receiving_yds'] / player_by_career['receiving_rec']
+
+# Store the new tables in the SQLite database
+vegas_combined_df.to_sql('vegas_data', conn, if_exists='replace', index=False)
+player_by_season.to_sql('player_metrics_by_season', conn, if_exists='replace', index=False)
+player_by_career.to_sql('player_metrics_by_career', conn, if_exists='replace', index=False)
+
+# Commit the changes and close the connection
+conn.commit()
+conn.close()
+
+import sqlite3
+
+# Connect to the SQLite database
+conn = sqlite3.connect(db_filepath)
+cursor = conn.cursor()
+
+# Create a table for efficiency data (only needs to be run once)
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS player_efficiency (
+    player_id TEXT PRIMARY KEY,
+    position_id TEXT,
+    completion_percentage FLOAT,
+    catch_percentage FLOAT,
+    yards_per_rush FLOAT,
+    yards_per_completion FLOAT,
+    yards_per_catch FLOAT
+)
+""")
+
+# Update efficiencies each week for QBs
+cursor.execute("""
+INSERT OR REPLACE INTO player_efficiency (player_id, position_id, completion_percentage, yards_per_completion)
+SELECT 
+    player_id,
+    position_id,
+    SUM(passing_cmp) * 1.0 / SUM(passing_att) AS completion_percentage,
+    SUM(passing_yds) * 1.0 / SUM(passing_cmp) AS yards_per_completion
+FROM player_level_detail
+WHERE position_id = 'QB'
+GROUP BY player_id, position_id
+""")
+
+# For WRs, RBs, TEs
+cursor.execute("""
+INSERT OR REPLACE INTO player_efficiency (player_id, position_id, catch_percentage, yards_per_catch)
+SELECT 
+    player_id,
+    position_id,
+    SUM(receiving_rec) * 1.0 / SUM(receiving_tar) AS catch_percentage,
+    SUM(receiving_yds) * 1.0 / SUM(receiving_rec) AS yards_per_catch
+FROM player_level_detail
+WHERE position_id IN ('WR', 'RB', 'TE')
+GROUP BY player_id, position_id
+""")
+
+# For RBs
+cursor.execute("""
+INSERT OR REPLACE INTO player_efficiency (player_id, position_id, yards_per_rush)
+SELECT 
+    player_id,
+    position_id,
+    SUM(rushing_yds) * 1.0 / SUM(rushing_att) AS yards_per_rush
+FROM player_level_detail
+WHERE position_id = 'RB'
+GROUP BY player_id, position_id
+""")
+
+# Commit and close connection
+conn.commit()
+conn.close()
+
+
+
+
+print("All tasks completed!")

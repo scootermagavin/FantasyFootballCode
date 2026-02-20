@@ -1,0 +1,65 @@
+import pandas as pd
+import numpy as np
+import sqlite3
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LinearRegression
+from sklearn.metrics import mean_squared_error
+
+# Data Loading
+def load_data():
+    # Filepath where the SQLite database is saved
+    db_filepath = "/Users/scotthoran/Library/CloudStorage/OneDrive-Personal/Documents/Daily Fantasy - Active/DFS Python Build/SQL Tables/fantasy_football.db"
+    
+    # Create a connection to the SQLite database
+    conn = sqlite3.connect(db_filepath)
+    
+    # Load the data from SQLite database into pandas dataframe
+    team_data = pd.read_sql_query("SELECT * FROM team_data", conn)
+    
+    # Close the SQLite database connection
+    conn.close()
+    
+    return team_data
+
+# Data Cleaning & Feature Engineering
+def preprocess_data(data):
+    # Calculate the Pass and Rush Ratios
+    data['pass_ratio'] = data['passing_att'] / (data['passing_att'] + data['rushing_att'])
+    data['rush_ratio'] = data['rushing_att'] / (data['passing_att'] + data['rushing_att'])
+    
+    # Drop rows with missing values
+    data = data.dropna()
+    
+    # Convert categorical columns to one-hot encoded columns
+    data = pd.get_dummies(data, columns=['week_segment', 'beat_line', 'over_under_winning_bet', 'is_favorite'])
+    
+    return data
+
+# Score Prediction Model
+def predict_scores(data):
+    # Features and Target Variable
+    X = data[['passing_att', 'rushing_att', 'pass_ratio', 'rush_ratio', 'vegas_spread', 'over_under', 'is_favorite_no', 'is_favorite_pick', 'is_favorite_yes']]
+    y = data['team_final']
+    
+    # Split the data into training and testing sets
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+    # Initialize and train the Linear Regression model
+    model = LinearRegression()
+    model.fit(X_train, y_train)
+    
+    # Predict the scores
+    y_pred = model.predict(X_test)
+    
+    # Calculate RMSE
+    rmse = np.sqrt(mean_squared_error(y_test, y_pred))
+    
+    print(f"RMSE: {rmse}")
+    
+    return model
+
+# Main Execution
+if __name__ == "__main__":
+    team_data = load_data()
+    processed_data = preprocess_data(team_data)
+    model = predict_scores(processed_data)

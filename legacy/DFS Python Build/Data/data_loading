@@ -1,0 +1,6 @@
+import pandas as pd
+
+def load_data(player_data_paths, team_data_path):
+    player_data = pd.concat([pd.read_csv(f) for f in player_data_paths], ignore_index=True)
+    team_data = pd.read_csv(team_data_path)
+    return player_data, team_data

@@ -1,0 +1,182 @@
+#Need to remake this for WR, QB, TE as well
+
+from operator import index
+import pandas as pd
+#import time
+import seaborn as sns; sns.set_style('whitegrid')
+import numpy as np
+from matplotlib import pyplot as plt; sns.set_style('whitegrid')
+
+kaggle_data = '/Users/scotthoran/Library/CloudStorage/OneDrive-Personal/Documents/Fantasy Football Python Class/TD Regression/archive/NFL Play by Play 2009-2018 (v5).csv'
+
+pbp_df = pd.read_csv(kaggle_data, iterator=True, low_memory=False, chunksize=10000)
+
+#start =time.time()
+
+df = pd.DataFrame()
+
+for chunk in pbp_df:
+    df = pd.concat([df, chunk])
+    
+rushing_df = df[['rush_attempt', 'rush_touchdown', 'yardline_100', 'two_point_attempt']]
+
+rushing_df = rushing_df.loc[(rushing_df['two_point_attempt'] == 0) & (rushing_df['rush_attempt'] == 1)]
+
+rushing_df_probs = rushing_df.groupby('yardline_100')['rush_touchdown'].value_counts(normalize=True)
+
+#normalize=True creates probabilities from the counting of whether a TD occurred
+#this df creates a probability of TD scores by RBs from yard_lines
+rushing_df_probs = pd.DataFrame({
+    'probability_of_touchdown': rushing_df_probs.values
+}, index=rushing_df_probs.index).reset_index()
+
+#now rush_touchdown = 0 is redundant as each yard line row adds to 1
+rushing_df_probs = rushing_df_probs.loc[rushing_df_probs['rush_touchdown'] == 1]
+
+rushing_df_probs = rushing_df_probs.drop('rush_touchdown',axis=1)
+
+rushing_df_probs.plot(x='yardline_100', y='probability_of_touchdown')
+
+PBP_2019_BASE_URL = "https://raw.githubusercontent.com/fantasydatapros/data/74b84c5fb2371b954b52b4f67ae5220930d57861/2019pbp.csv"
+
+pbp_2019_df = pd.read_csv(PBP_2019_BASE_URL,
+                          iterator=True,
+                          low_memory=False,
+                          chunksize=10000,
+                          index_col=0)
+
+pbp_2019_df_final = pd.DataFrame()
+
+for chunk in pbp_2019_df:
+    pbp_2019_df_final = pd.concat([pbp_2019_df_final, chunk])
+
+def fix_yardline(row):
+    yardline = row['YardLineFixed']
+    direction = row['YardLineDirection']
+    
+    if direction == 'OPP':
+        return yardline
+    else:
+        return 100 - yardline
+pbp_2019_df_final = pbp_2019_df_final(['RushingPlayer', 'OffenseTeam','YardLineFixed','YardLineDirection'])
+
+pbp_2019_df_final = pbp_2019_df_final.dropna()
+
+pbp_2019_df_final['yardline_100'] = pbp_2019_df_final.apply(fix_yardline, axis=1)
+
+pbp_2019_df_final = pbp_2019_df_final.rename({
+    'RushingPlayer':'Player',
+    'OffenseTeam': 'Tm'
+}, axis=1).drop(['YardLineDirection','YardLineFixed'], axis=1)
+
+df = pbp_2019_df_final.merge(rushing_df_probs, how='left',on='yardline_100')
+
+df = df.groupby(['Player','Tm'], as_index=False).agg({
+    'probability_of_touchdown': np.sum
+}).rename({'probability_of_touchdown': 'Expected Touchdowns'}, axis=1)
+
+df = df.sort_values(by='Expected Touchdowns', ascending=False)
+
+df['Expected Touchdowns Rank'] = df['Expected Touchdowns'].rank(ascending=False)
+
+YEARLY_BASE_URL = 'https://raw.githubusercontent.com/fantasydatapros/data/master/yearly/2019.csv'
+
+# there is one odd column there which is why we have to use .iloc[:, 1:]. 
+stats_df = pd.read_csv(YEARLY_BASE_URL).iloc[:, 1:][['Player', 'Tm','Pos', 'RushingTD']] # these are the only columsn we'll need
+
+
+#checking which team names are different
+#print('Differing Team Names:', list(set(stats_df['Tm'].unique()) - set(df['Tm'].unique())))
+#print('\n')
+#print('stats_df Team Names:', stats_df['Tm'].unique().tolist())
+#print('\n')
+#print('df Team Names:', df['Tm'].unique().tolist())
+
+#replacing team names using a dictionary
+
+team_name_map = {
+    'TAM': 'TB',
+    'KAN': 'KC',
+    'LAR': 'LA',
+    'NOR': 'NO',
+    'GNB': 'GB',
+    'NWE': 'NE',
+    'SFO': 'SF'
+}
+
+stats_df = stats_df.replace({
+    'Tm': team_name_map
+})
+ 
+def fix_player_names(name):
+     name_split = name.split() #splits the name on the whitespace
+     first_initial = name_split[0][0].upper() #gets first letter of first element and converts
+     last_name = name_split[1].upper()
+     return '.'.join([first_initial , last_name]) #joins first and last name on the period
+ 
+stats_df['Player'] = stats_df['Player'].apply(fix_player_names)
+
+stats_df = stats_df.loc[stats_df['Pos'] == 'RB']
+
+df = stats_df.merge(df, how = 'left', on=['Player', 'Tm']).dropna()
+
+df = df.drop('Pos',axis=1)
+
+df = df.rename({"RushingTD": 'Actual Touchdowns'}, axis=1)
+
+df['Actual Touchdowns Rank'] = df['Actual Touchdowns'].rank(ascending=False)
+
+"""
+Regression candidate is the difference between a player's Expected Touchdowns and Actual Touchdowns as 
+shown below. More positive numbers mean the player underperformed their season, more negative numbers
+means the player overperformed their season. 
+"""
+
+df['Regression Candidate'] = df['Expected Touchdowns'] - df['Actual Touchdowns']
+ 
+"""
+The order of taking the difference here for the Regression Rank is reversed here as a 
+small actual TD rank is good, while a large actual TD rank is not.
+"""
+
+df['Regression Rank Candidate'] = df['Actual Touchdowns Rank'] - df['Expected Touchdowns Rank']
+
+fig, ax = plt.subplots(figsize=(12,8))
+
+# creating a new column with either True/False based on if Regression Candidate is a positive number
+df['Positive Regression Candidate'] = df['Regression Candidate'] > 0
+
+# simple scatter plot
+sns.scatterplot(
+    x = 'Expected Touchdowns',
+    y = 'Actual Touchdowns',
+    hue = 'Positive Regression Candidate',
+    data = df,
+    palette = ['r', 'g'] # red and green
+);
+
+max_act_touchdowns = int(df['Actual Touchdowns'].max()) # max touchdowns
+max_exp_touchdowns = int(df['Expected Touchdowns'].max()) # max expected touchdowns
+
+max_tds = max(max_act_touchdowns, max_exp_touchdowns) # max of actual and expected tds
+
+sns.lineplot(range(max_tds), range(max_tds)) # plotting a line with slope of 1 up to max_tds number. This is the blue line on our viz
+
+# initialize a list of notable player's we'd like to annotate the visualization with.
+notable_players = ['L.FOURNETTE', 'A.JONES', 'C.MCCAFFREY', 'R.MOSTERT']
+
+for _, row in df.iterrows():
+    if row['Player'] in notable_players: 
+        """
+        Check our the docs on Axes.text
+        
+        https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.axes.Axes.text.html
+        
+        Notice we are using the ax object we instantiated above.
+        """
+        ax.text(
+            x = row['Expected Touchdowns']+.1, # add a bit of spacing from the point in the x-direction
+            y = row['Actual Touchdowns'] + 0.05, # same but in the y-direction
+            s = row['Player'] # annotate with the player's name
+        )
+        

@@ -1,0 +1,309 @@
+﻿event_name,commence,status,bookmaker,last_update,point_1,point_2,odd_1,odd_2
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 52.5,under 52.5,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 53,under 53,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 53,under 53,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 52.5,under 52.5,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 52.5,under 52.5,-108,-113
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 52.5,under 52.5,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 53,under 53,-107,-107
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 52.5,under 52.5,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 52.5,under 52.5,-108,-113
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 53,under 53,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 52.5,under 52.5,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 53,under 53,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 53.5,under 53.5,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 53.5,under 53.5,-105,-115
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 53.0,under 53.0,-110,-110
+Detroit Lions_Kansas City Chiefs,2023-09-08T00:20:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 52.5,under 52.5,-108,-113
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 40.5,under 40.5,-115,-105
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 41,under 41,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 41,under 41,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 41.5,under 41.5,-105,-115
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 40.5,under 40.5,-113,-108
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 41,under 41,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 41,under 41,-109,-105
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 40.5,under 40.5,-113,-108
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 41,under 41,-112,-108
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 41.0,under 41.0,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 41,under 41,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 41,under 41,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 41,under 41,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 40.5,under 40.5,-115,-105
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 41.0,under 41.0,-110,-110
+Pittsburgh Steelers_San Francisco 49ers,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 40.5,under 40.5,-113,-108
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 40,under 40,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 39.5,under 39.5,-109,-112
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 39.5,under 39.5,-107,-107
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 39.5,under 39.5,-109,-112
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 39.5,under 39.5,-115,-105
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 39.5,under 39.5,-110,-110
+Atlanta Falcons_Carolina Panthers,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 39.5,under 39.5,-109,-112
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 43.5,under 43.5,-118,-104
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 43.5,under 43.5,-109,-112
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 43.5,under 43.5,-107,-107
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 43.5,under 43.5,-109,-112
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 44,under 44,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 43.5,under 43.5,-115,-105
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 43.5,under 43.5,-110,-110
+Baltimore Ravens_Houston Texans,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 43.5,under 43.5,-109,-112
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 48,under 48,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 47,under 47,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 47.0,under 47.0,-112,-109
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 47,under 47,-107,-107
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 47,under 47,-112,-109
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 47,under 47,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 47.0,under 47.0,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 47.5,under 47.5,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 48.0,under 48.0,-110,-110
+Cincinnati Bengals_Cleveland Browns,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 47,under 47,-112,-109
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 45,under 45,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 45,under 45,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 45.5,under 45.5,-108,-113
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 45,under 45,-107,-107
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 45.5,under 45.5,-108,-113
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 45,under 45,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 45.5,under 45.5,-110,-110
+Minnesota Vikings_Tampa Bay Buccaneers,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 45.5,under 45.5,-108,-113
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 41.5,under 41.5,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 41.5,under 41.5,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 41.0,under 41.0,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 41,under 41,-107,-107
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 41.0,under 41.0,-115,-105
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 41,under 41,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 41,under 41,-112,-108
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 41.5,under 41.5,-105,-115
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 41.5,under 41.5,-110,-110
+New Orleans Saints_Tennessee Titans,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 41,under 41,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 38.5,under 38.5,-105,-115
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 38.0,under 38.0,-112,-109
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 37.5,under 37.5,-109,-105
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 38,under 38,-112,-109
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 37.5,under 37.5,-112,-108
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 38.0,under 38.0,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 38,under 38,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 38.5,under 38.5,-105,-115
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 38.0,under 38.0,-110,-110
+Arizona Cardinals_Washington Commanders,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 38,under 38,-112,-109
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 45.5,under 45.5,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 45.0,under 45.0,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 45.5,under 45.5,-104,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 45.5,under 45.5,-106,-114
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 45.0,under 45.0,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 45,under 45,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 45.5,under 45.5,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 45.0,under 45.0,-110,-110
+Indianapolis Colts_Jacksonville Jaguars,2023-09-10T17:00:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 45,under 45,-106,-114
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 45.0,under 45.0,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 45,under 45,-104,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 45,under 45,-106,-114
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 45.0,under 45.0,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 45,under 45,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 45.5,under 45.5,-105,-115
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 45.0,under 45.0,-110,-110
+New England Patriots_Philadelphia Eagles,2023-09-10T20:25:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 45,under 45,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 44.0,under 44.0,-109,-112
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 44,under 44,-107,-107
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 44,under 44,-109,-112
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 44.0,under 44.0,-115,-105
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 44,under 44,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 44.5,under 44.5,100,-120
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 43.5,under 43.5,-110,-110
+Denver Broncos_Las Vegas Raiders,2023-09-10T20:25:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 44,under 44,-109,-112
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 45.5,under 45.5,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 46,under 46,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 46,under 46,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 46,under 46,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 45.5,under 45.5,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 46,under 46,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 45.5,under 45.5,-107,-107
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 46,under 46,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 45.5,under 45.5,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 45.5,under 45.5,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 45.5,under 45.5,-115,-105
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 46,under 46,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 46.5,under 46.5,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 46.5,under 46.5,-105,-115
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 45.5,under 45.5,-110,-110
+Los Angeles Rams_Seattle Seahawks,2023-09-10T20:25:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 45.5,under 45.5,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 43.5,under 43.5,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 43.0,under 43.0,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 43,under 43,-109,-105
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 43,under 43,-112,-108
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 43.0,under 43.0,-115,-105
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 43,under 43,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 43,under 43,-112,-108
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 43.5,under 43.5,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 43.0,under 43.0,-110,-110
+Chicago Bears_Green Bay Packers,2023-09-10T20:25:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 43,under 43,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 50.5,under 50.5,-114,-106
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 50.5,under 50.5,-113,-108
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 51.5,under 51.5,-106,-108
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 50.5,under 50.5,-113,-108
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 51.5,under 51.5,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 51.0,under 51.0,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 51,under 51,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 50.5,under 50.5,-115,-105
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 50.5,under 50.5,-110,-110
+Los Angeles Chargers_Miami Dolphins,2023-09-10T20:25:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 50.5,under 50.5,-113,-108
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 46,under 46,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 46.5,under 46.5,-107,-107
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 46.0,under 46.0,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 46.5,under 46.5,-110,-110
+Dallas Cowboys_New York Giants,2023-09-11T00:20:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 46.5,under 46.5,-105,-115
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,MyBookie.ag,2023-09-06T02:09:22.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,PointsBet (US),2023-09-06T02:10:59.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,BetRivers,2023-09-06T02:09:49.000Z,over 46.0,under 46.0,-113,-108
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 46.5,under 46.5,-107,-107
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,SuperBook,2023-09-06T02:10:15.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,Unibet,2023-09-06T02:09:44.000Z,over 46,under 46,-113,-108
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,BetMGM,2023-09-06T02:09:47.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,DraftKings,2023-09-06T02:09:47.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,Barstool Sportsbook,2023-09-06T02:10:52.000Z,over 46.5,under 46.5,-105,-115
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,WynnBET,2023-09-06T02:11:04.000Z,over 46.5,under 46.5,-110,-110
+Buffalo Bills_New York Jets,2023-09-12T00:15:00.000Z,Pending,TwinSpires,2023-09-06T02:10:47.000Z,over 46,under 46,-113,-108
+Minnesota Vikings_Philadelphia Eagles,2023-09-15T00:15:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 48.5,under 48.5,-110,-110
+Minnesota Vikings_Philadelphia Eagles,2023-09-15T00:15:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 48.5,under 48.5,-110,-110
+Minnesota Vikings_Philadelphia Eagles,2023-09-15T00:15:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 48.5,under 48.5,-113,-102
+Minnesota Vikings_Philadelphia Eagles,2023-09-15T00:15:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 48.5,under 48.5,-115,-105
+Buffalo Bills_Las Vegas Raiders,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 47.5,under 47.5,-110,-110
+Baltimore Ravens_Cincinnati Bengals,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 47.5,under 47.5,-110,-110
+Detroit Lions_Seattle Seahawks,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 51.5,under 51.5,-110,-110
+Los Angeles Chargers_Tennessee Titans,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 46.5,under 46.5,-110,-110
+Houston Texans_Indianapolis Colts,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 41,under 41,-110,-110
+Atlanta Falcons_Green Bay Packers,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 41,under 41,-110,-110
+Chicago Bears_Tampa Bay Buccaneers,2023-09-17T17:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 44,under 44,-110,-110
+Jacksonville Jaguars_Kansas City Chiefs,2023-09-17T18:00:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 50,under 50,-110,-110
+Arizona Cardinals_New York Giants,2023-09-17T20:05:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 38,under 38,-110,-110
+Los Angeles Rams_San Francisco 49ers,2023-09-17T20:05:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 42.5,under 42.5,-110,-110
+Denver Broncos_Washington Commanders,2023-09-17T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 41.5,under 41.5,-110,-110
+Dallas Cowboys_New York Jets,2023-09-17T20:25:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 46.5,under 46.5,-110,-110
+Miami Dolphins_New England Patriots,2023-09-18T00:20:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 45,under 45,-110,-110
+Carolina Panthers_New Orleans Saints,2023-09-18T23:15:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 42.5,under 42.5,-110,-110
+Carolina Panthers_New Orleans Saints,2023-09-18T23:15:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 42.5,under 42.5,-110,-110
+Carolina Panthers_New Orleans Saints,2023-09-18T23:15:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 42.5,under 42.5,-107,-107
+Carolina Panthers_New Orleans Saints,2023-09-18T23:15:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 42.5,under 42.5,-110,-110
+Cleveland Browns_Pittsburgh Steelers,2023-09-19T00:15:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 43.5,under 43.5,-110,-110
+Cleveland Browns_Pittsburgh Steelers,2023-09-19T00:15:00.000Z,Pending,BetUS,2023-09-06T02:10:44.000Z,over 43.5,under 43.5,-110,-110
+Cleveland Browns_Pittsburgh Steelers,2023-09-19T00:15:00.000Z,Pending,LowVig.ag,2023-09-06T02:09:40.000Z,over 43,under 43,-107,-107
+Cleveland Browns_Pittsburgh Steelers,2023-09-19T00:15:00.000Z,Pending,BetOnline.ag,2023-09-06T02:10:52.000Z,over 43,under 43,-110,-110
+Atlanta Falcons_Jacksonville Jaguars,2023-10-01T13:30:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 45.5,under 45.5,-110,-110
+Atlanta Falcons_Jacksonville Jaguars,2023-10-01T13:30:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 45.5,under 45.5,-110,-110
+Atlanta Falcons_Jacksonville Jaguars,2023-10-01T13:30:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 45.5,under 45.5,-110,-110
+Buffalo Bills_Jacksonville Jaguars,2023-10-08T13:30:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 48.5,under 48.5,-110,-110
+Buffalo Bills_Jacksonville Jaguars,2023-10-08T13:30:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 49.5,under 49.5,-110,-110
+Buffalo Bills_Jacksonville Jaguars,2023-10-08T13:30:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 48.0,under 48.0,-110,-110
+Baltimore Ravens_Tennessee Titans,2023-10-15T13:30:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 42,under 42,-110,-110
+Baltimore Ravens_Tennessee Titans,2023-10-15T13:30:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 41.5,under 41.5,-110,-110
+Baltimore Ravens_Tennessee Titans,2023-10-15T13:30:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 41.0,under 41.0,-110,-110
+Kansas City Chiefs_Miami Dolphins,2023-11-05T14:30:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 51.5,under 51.5,-110,-110
+Kansas City Chiefs_Miami Dolphins,2023-11-05T14:30:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 51.5,under 51.5,-110,-110
+Kansas City Chiefs_Miami Dolphins,2023-11-05T14:30:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 52.5,under 52.5,-110,-110
+Indianapolis Colts_New England Patriots,2023-11-12T14:30:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 41.5,under 41.5,-110,-110
+Indianapolis Colts_New England Patriots,2023-11-12T14:30:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 41.5,under 41.5,-110,-110
+Indianapolis Colts_New England Patriots,2023-11-12T14:30:00.000Z,Pending,Bovada,2023-09-06T02:11:18.000Z,over 41.0,under 41.0,-110,-110
+Kansas City Chiefs_Philadelphia Eagles,2023-11-21T01:15:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 50.5,under 50.5,-110,-110
+Kansas City Chiefs_Philadelphia Eagles,2023-11-21T01:15:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 50.5,under 50.5,-110,-110
+Miami Dolphins_New York Jets,2023-11-24T20:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 46.5,under 46.5,-110,-110
+Miami Dolphins_New York Jets,2023-11-24T20:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 46.5,under 46.5,-110,-110
+Philadelphia Eagles_San Francisco 49ers,2023-12-03T21:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 45.5,under 45.5,-110,-110
+Philadelphia Eagles_San Francisco 49ers,2023-12-03T21:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 45.5,under 45.5,-110,-110
+Kansas City Chiefs_Las Vegas Raiders,2023-12-25T18:00:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 51.5,under 51.5,-110,-110
+Kansas City Chiefs_Las Vegas Raiders,2023-12-25T18:00:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 51,under 51,-110,-110
+New York Giants_Philadelphia Eagles,2023-12-25T21:30:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 47,under 47,-110,-110
+New York Giants_Philadelphia Eagles,2023-12-25T21:30:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 47,under 47,-110,-110
+Cincinnati Bengals_Kansas City Chiefs,2023-12-31T21:25:00.000Z,Pending,William Hill (US),2023-09-06T02:08:49.000Z,over 50.5,under 50.5,-110,-110
+Cincinnati Bengals_Kansas City Chiefs,2023-12-31T21:25:00.000Z,Pending,FanDuel,2023-09-06T02:11:10.000Z,over 50.5,under 50.5,-110,-110

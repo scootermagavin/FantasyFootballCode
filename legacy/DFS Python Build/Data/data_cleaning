@@ -1,0 +1,5 @@
+import datetime
+
+def clean_data(player_data, team_data):
+    #... (Your cleaning steps here) ...
+    return cleaned_player_data, cleaned_team_data

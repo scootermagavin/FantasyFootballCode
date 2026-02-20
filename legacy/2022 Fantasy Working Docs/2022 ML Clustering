@@ -1,0 +1,211 @@
+from enum import unique
+from operator import index
+from scipy.spatial import distance
+
+a = (1,2)
+b = (3,4)
+
+distance.euclidean(a,b)
+
+"""
+PPR: https://raw.githubusercontent.com/fantasydatapros/data/master/fantasypros/ecr/PPR_ECR.csv
+
+HALF PPR: https://raw.githubusercontent.com/fantasydatapros/data/master/fantasypros/ecr/HALF_PPR_ECR.csv
+
+STANDARD: https://raw.githubusercontent.com/fantasydatapros/data/master/fantasypros/ecr/STANDARD_ECR.csv
+"""
+
+import pandas as pd
+
+#This is URL to github of Fantasypros ECR data but old data
+#URL = 'https://raw.githubusercontent.com/fantasydatapros/data/master/fantasypros/ecr/PPR_ECR.csv'
+file_path = '/Users/scotthoran/Library/CloudStorage/OneDrive-Personal/Documents/Fantasy Football Python Class/2022 Fantasy Working Docs/2022 PPR Data.csv'
+df = pd.read_csv(file_path, index_col=0).dropna()
+
+num_teams = 12
+num_roster_spots = 14 #14 for AJ's FF league
+#num_roster_spots = 16 #16 for LORG's FF league
+draft_pool = num_teams * num_roster_spots
+
+df = df[:draft_pool]
+df['Rank'] = df.index
+
+from sklearn.metrics import silhouette_score
+from sklearn.cluster import KMeans
+from matplotlib import pyplot as plt
+import numpy as np
+import seaborn as sns; sns.set_style('whitegrid');
+
+avgs = []
+
+start = 4
+stop = 35
+
+"""
+We are going iterate from k=4 -> k=34 and try to find the silhouette score for each value of K.
+We are going to choose the K that results in the highest score.
+starting at 4 clusters and moving to 35
+"""
+
+for n_clusters in range(start, stop):
+    
+    X = df[['AVG.']].values
+    
+    model = KMeans(n_clusters=n_clusters) # instantiate the model with hyperparameters
+    
+    model.fit(X) # fit the model
+    
+    labels = model.predict(X) # predict labels (assign clusters) to our data
+    
+    silhouette_avg = silhouette_score(X, labels) # calculate the silhouette avg for our labels
+    
+    avgs.append(silhouette_avg) # append it to a list for plotting later
+
+plt.plot(np.arange(start,stop,1), avgs);
+plt.xlabel('Number of Clusters');
+plt.ylabel('Silhouette Score');
+
+plt.xticks(np.arange(start, stop, 1));
+
+pd.set_option('display.max_rows', None)
+
+k = 13 # this is the value we got back from doing the silhouette analysis above
+
+model = KMeans(n_clusters=k)
+
+model.fit(X)
+
+labels = model.predict(X)
+
+def assign_tiers(labels):
+    """
+    This function maps the random labels to actual fantasy football tiers.
+    """
+    
+    unique_labels = []
+    tiers = []
+    
+    for i in labels:
+        
+        if i not in unique_labels:
+            unique_labels.append(i)
+        
+        """
+        The Python set object gets us back a list-like object with only the unique values.
+        The way this function works is that at each iteration, unique_labels is appended with the label.
+        The length of the set is the tier we are on. Each time we get another unique label,
+        the length of the set increases by one, and we now know we are on the next tier.
+        
+        Take a look at the labels we got back above for WR and try to run through what this function
+        is doing at each iteration.
+        
+        """
+        tiers.append(
+            len(set(unique_labels))
+        )
+        
+    return tiers
+
+# map labels -> tiers
+tiers = assign_tiers(labels)
+
+# create a new column for tiers
+df['TIERS'] = tiers
+
+#this is all in the video https://www.fantasyfootballdatapros.com/course/section/11
+
+import matplotlib.patches as mpatches
+import seaborn as sns
+
+sns.set_style('whitegrid')
+
+def make_clustering_viz(df, POS=None, figsize=(20, 20)):
+    
+    """
+    Create a clustering visualization given our df.
+    
+    """
+    # if POS is provided as an argument to the function.
+    if POS:
+        df = df.loc[df['POS'].str.contains(POS)]
+    
+    # come of these values are hexidecimal color codes.
+    # https://htmlcolorcodes.com/
+    colors = ['purple', 'magenta', 'red', 'blue', 'orange', 'green',
+              'salmon', 'yellow', 'black', 'grey', '#3498db', '#16a085', '#f4d03f', '#f1948a',
+              '#48c9b0', '#3498db', '#e74c3c', '#d7bde2', '#d0d3d4'
+              ]
+    
+    # create a dictionary with the keys of 1 -> 5, and the corresponding color for each tier.
+    colors = dict(zip(range(1, k+1), colors[:k]))
+    
+    # set the figure size
+    plt.figure(figsize=figsize)
+    
+    # plot Avg. vs. Rank. Our visualization will have Avg on the x-axis and ECR on the y-axis.
+    plt.scatter(x=df['AVG.'], 
+                y=df['Rank'], 
+                c='#212f3d', # color of the point
+                alpha=0.9, # 90% transparency
+                s=7 # size 
+               )
+    
+    yticks = [] # for storing player-names on the y-axis
+    
+    for _, row in df.iterrows():
+        
+        # we are going to plot a horizontal line along each point with a range stemming from
+        # best (xmin) to worst (xmax) ranking.
+        
+        xmin = row['BEST'] 
+        xmax = row['WORST']
+        
+        ymin, ymax = row['Rank'], row['Rank'] 
+        
+        player = row['PLAYER NAME'] # annotate the y-ticks with player names
+        
+        tier = row['TIERS']
+        
+        # plot a horizontal line
+        plt.plot((xmin, xmax), (ymin, ymax), c=colors.get(tier, 'black'), alpha=0.8) # plot each individual horizontal line with either the tier color value or black
+        
+        yticks.append(player) # append the yticks list with the player's name
+    
+    # this will be used for the legend
+    # for more info on legend patches, visit
+    # https://matplotlib.org/3.3.0/api/_as_gen/matplotlib.patches.Patch.html#matplotlib.patches.Patch
+    patches = []
+    for tier, color in colors.items():
+        patch = mpatches.Patch(color=color, label=f'Tier {tier}') # legend label + color
+        patches.append(patch)
+    
+    plt.legend(handles=patches, borderpad=1, fontsize=12) # update the legend with the patches
+    
+    # setting xlabel, ylabel and yticks (player names)
+    plt.xlabel('Average Expert Rank', fontsize=12)
+    plt.ylabel('Expert Consensus Rank', fontsize=12)
+    plt.yticks(df['Rank'], yticks, fontsize=12)
+    
+    # setting title
+    plt.title('Tiers for the 2020 Draft. ECR vs. Average Expert Rank.', fontsize=12)
+    
+    # gca stands for get current axis. It's a roundabout way of grabbing the ax object like we
+    # would if we were using matplotlib's object-oriented API.
+    # docs on gca
+    # https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.gca.html
+    # we are inverting the y-axis here to show top players at the top.
+    # docs on Axes.invert_yaxis()
+    # https://matplotlib.org/api/_as_gen/matplotlib.axes.Axes.invert_yaxis.html
+    
+    plt.gca().invert_yaxis()
+    plt.show()     
+    
+    plt.savefig('/Users/scotthoran/Library/CloudStorage/OneDrive-Personal/Documents/Fantasy Football Python Class/2022 Fantasy Working Docs/Cluster - {POS}.jpeg')
+    
+#must do make_clustering_viz formulas below to visualize the graphs
+
+make_clustering_viz(df, figsize=(10,40))   
+make_clustering_viz(df, 'WR', figsize=(10, 20))
+make_clustering_viz(df, 'TE', figsize=(10, 20))
+make_clustering_viz(df, 'QB', figsize=(10, 20))
+make_clustering_viz(df, 'RB', figsize=(10, 20))

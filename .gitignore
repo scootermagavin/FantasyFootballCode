@@ -1,0 +1,28 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.Python
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Generated data (large, reproducible from raw)
+data/processed/
+data/models/
+data/outputs/
+
+# Raw data CSVs (large; managed outside git)
+data/raw/historical/*.csv
+data/raw/historical/readme.txt
+data/raw/*.DS_Store
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Legacy DS_Store / submodule state
+legacy/.DS_Store
+legacy/**/.DS_Store

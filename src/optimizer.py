@@ -198,7 +198,12 @@ def _convert_gridironai_to_dk_csv(salary_path: Path, curr_path: Path) -> Path:
         team     = str(row["team"]).strip()
         opp      = str(row["opp"]).strip()
         loc      = str(row.get("game_location", "away")).strip().lower()
-        salary   = int(row["salary"]) if pd.notna(row.get("salary")) else 3000
+
+        raw_sal = row.get("salary")
+        if pd.isna(raw_sal):
+            log.debug(f"  Skipping {display} — no salary in source CSV")
+            continue
+        salary   = int(raw_sal)
         proj_val = row.get("Projection")
         avg_pts  = float(proj_val) if pd.notna(proj_val) else 0.0
 
